@@ -1,4 +1,4 @@
-#!/home/easy/Documents/projects/learning/cs50p/pset4/bin/python
+#!/home/shbang/Documents/projects/learning/cs50p/pset4/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
