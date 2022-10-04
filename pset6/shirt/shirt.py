@@ -11,7 +11,8 @@ def main():
                 shirt = Image.open("shirt.png")
                 size = shirt.size
                 pic = Image.open(sys.argv[1])
-                cropped_pic = ImageOps.fit(pic, size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+                cropped_pic = ImageOps.fit(pic, size, method=Image.Resampling.BICUBIC,
+                        bleed=0.0, centering=(0.5, 0.5))
                 cropped_pic.paste(shirt, box=None, mask=shirt)
                 cropped_pic.save(sys.argv[2])
     # Exception for when the input_file doesn't exist
